@@ -1,4 +1,5 @@
 // 01:05:51 .56
+// 01:18:02 .62 
 
 var fs = require("fs")
 
@@ -13,39 +14,62 @@ var testCase = inp.splice(0,1)[0]
 for(var t=0; t<testCase; t++){
 
     // N, K 입력 받기
-    var buildingN = inp.splice(0,1)[0]
-    var edgeRuleN = buildingN.split(' ')[1]
-    buildingN = buildingN.split(' ')[0]
+    var nodNum = inp.splice(0,1)[0]
+    var edgeNum = nodNum.split(' ')[1]
+    nodNum = nodNum.split(' ')[0]
     
     var nod = {}
     var tmp = inp.splice(0,1)[0]
     // 건설 시간 입력
-    for(var i=1; i<=buildingN; i++){
-        nod['n'+i] = {}
-        nod['n'+i].time = tmp.split(' ')[i]
+    for(var i=0; i<nodNum; i++){
+        nod[''+i] = {}
+        nod[''+i].time = Number.parseInt(tmp.split(' ')[i])
     }
-    
+
     // 연결 정보 입력
-    for(var i=1; i<=edgeRuleN; i++){
+    for(var i=0; i<edgeNum; i++){
         tmp = inp.splice(0,1)[0]
-        if(nod[ 'n'+tmp.split(' ')[0] ].to == undefined)
-            nod[ 'n'+tmp.split(' ')[0]].to = []
-        nod[ 'n'+tmp.split(' ')[0] ].to.push(tmp.split(' ')[1])
+        if(nod[ ''+(tmp.split(' ')[0]-1) ].to == undefined)
+            nod[ ''+(tmp.split(' ')[0]-1) ].to = {length: 0}
+        nod[ ''+(tmp.split(' ')[0]-1) ].to[(Number.parseInt(tmp.split(' ')[1])-1)] = (Number.parseInt(tmp.split(' ')[1])-1)
+        nod[ ''+(tmp.split(' ')[0]-1) ].to.length++
+
+        if(nod[ ''+(tmp.split(' ')[1]-1) ].from == undefined)
+            nod[ ''+(tmp.split(' ')[1]-1) ].from = {length: 0}
         
-        if(nod[ 'n'+tmp.split(' ')[1] ].from == undefined)
-            nod[ 'n'+tmp.split(' ')[1]].from = []
-        
-        nod[ 'n'+tmp.split(' ')[1] ].from.push(tmp.split(' ')[0])
-        
+        nod[ ''+(tmp.split(' ')[1]-1) ].from[(Number.parseInt(tmp.split(' ')[0])-1)] = (Number.parseInt(tmp.split(' ')[0])-1)
+        nod[ ''+(tmp.split(' ')[1]-1) ].from.length++
+
     }
 
     // 타겟 노드
     var targetNod = inp.splice(0,1)[0]
 
-    
 
+    // Algorithm
 
-    console.log(findRoad(targetNod))
+    while(true){
+
+        for(var i=0; i<nodNum; i++){
+            // dont have income node
+            if(nod[i].from == undefined) {
+                console.log(121231233)
+                for(var j=0; j<nod[i].to.length; j++){
+                    console.log(nod[nod[i].to])
+                    
+                    nod[nod[i].to[j]].time += nod[i].time
+                    nod[nod[i].to[j]][i] = undefined
+                }
+                console.log(nod)
+                console.log()
+                return;
+                    
+
+            }
+
+        }
+
+    }
 
 
 
