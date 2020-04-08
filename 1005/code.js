@@ -4,8 +4,8 @@
 
 var fs = require("fs")
 
-// var inp = fs.readFileSync('/dev/stdin').toString().split('\n')
-var inp = fs.readFileSync('input').toString().split('\n')
+var inp = fs.readFileSync('/dev/stdin').toString().split('\n')
+// var inp = fs.readFileSync('input').toString().split('\n')
 
 // 그래프를 역추적해서 길을 찾기
 // 처음부터 길대로 내려오면서 최대 시간값 찾기
@@ -28,7 +28,7 @@ for(var t=0; t<testCase; t++){
     // 건설 시간 입력
     for(var i=0; i<nodNum; i++){
         nod[i] = {}
-        nod[i].time = tmp.split(' ')[i] - 0
+        nod[i].time = tmp.split(' ')[i]-0
         nod[i].to = []
         nod[i].from = 0
         nod[i].timeTmp = []
@@ -45,6 +45,11 @@ for(var t=0; t<testCase; t++){
     var targetNod = inp.splice(0,1)[0]-1
     var endQueue = []
 
+    // 큐에 인디그리 0인 노드 삽입
+    var queue = []
+    for(var i=0; i<nodNum; i++)
+        if(nod[i].from == 0)
+            queue.push(i)
 
     // 위상정렬
     
@@ -57,43 +62,27 @@ for(var t=0; t<testCase; t++){
     
     while(true){
 
+        // 1.
+        var trig = queue.splice(0,1)[0]
 
+        // 2.
+        if(nod[trig].from == 0 && nod[trig].timeTmp.length != 0)
+            nod[trig].time += nod[trig].timeTmp.sort()[ nod[trig].timeTmp.length-1 ]
 
-        var trig = endQueue.splice(0,1)[0]
-        // nod[trig].to
-        console.log(trig)
-
-
-
-        // ending conditions
-        if(nod[targetNod].from == 0){
+        // 3.
+        if(trig == targetNod && nod[trig].from == 0){
             console.log(nod[trig].time)
             break;
         }
 
-	    // 자식 노드로 시간값을 보냄 & from--
-        for(var a=0; a<nod[trig].to.length; a++){
-            nod[ nod[trig].to[a] ].timeTmp.push( nod[trig].time )
-            nod[ nod[trig].to[a] ].from--
-            
-            // 자식 노드를 큐에 추가
-            endQueue.push( nod[trig].to[a] )
+        for(var c=0; c<nod[trig].to.length; c++){
+            // 4.
+            nod[ nod[trig].to[c] ].timeTmp.push(nod[trig].time)
+            // 5.
+            nod[ nod[trig].to[c] ].from--
+
+            if(nod[ nod[trig].to[c] ].from == 0)
+                queue.push(nod[trig].to[c])
         }
-
-        // from 노드가 0일 경우, timeTmp 최댓값을 time에 추가
-        if(nod[trig].from == 0 && nod[trig].timeTmp.length != 0){
-            nod[trig].time += nod[trig].timeTmp.sort()[nod[trig].timeTmp.length-1]
-            nod[trig].timeTmp = []
-        }
-        
-
-
-        console.log(endQueue)
-        console.log(nod)
-        console.log()
-        
-
     }
-
-
 }
