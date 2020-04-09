@@ -2,6 +2,11 @@
 // 01:18:02 .62 
 // 01:07:52 .06 (제출 => 시간초과)
 
+// 1. console.log() 사용을 한 번 이상 하지 말자
+// 2. splice() 사용을 자제하자
+// 3. split() 사용을 최소화하자
+// 4. 스코프 내부에서만 쓰이는 변수일 경우, 지역변수로 선언한다.
+
 var fs = require("fs")
 
 var inp = fs.readFileSync('/dev/stdin').toString().split('\n')
