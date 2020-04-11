@@ -1,5 +1,5 @@
 # BAEKJOON ONLINE JUDGE 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/DokySp/acmicpc-practice) ![GitHub last commit](https://img.shields.io/github/last-commit/dokysp/acmicpc-practice) ![GitHub language count](https://img.shields.io/github/languages/count/dokysp/acmicpc-practice) ![GitHub](https://img.shields.io/github/license/dokysp/acmicpc-practice)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/dokysp/acmicpc-practice) ![GitHub last commit](https://img.shields.io/github/last-commit/dokysp/acmicpc-practice) ![GitHub language count](https://img.shields.io/github/languages/count/dokysp/acmicpc-practice) ![GitHub](https://img.shields.io/github/license/dokysp/acmicpc-practice)
 
 백준 문제풀이를 기록하는 아카이브입니다.
 > [icpc.me/u/uhug123](http://icpc.me/u/uhug123)
