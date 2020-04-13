@@ -1,4 +1,7 @@
 
+
+// 46:25 .02
+
 var inp = require('fs').readFileSync('input').toString().split('\n')
 
 var tc = inp[0] - 0
