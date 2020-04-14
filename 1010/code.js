@@ -5,6 +5,7 @@
 var inp = require('fs').readFileSync('input').toString().split('\n')
 
 var tc = inp[0] - 0
+var resStr = ""
 
 for (var T = 1; T <= tc; T++) {
 
@@ -18,11 +19,11 @@ for (var T = 1; T <= tc; T++) {
         var pp = []
         for (var j = 0; j < m; j++) {
             if (m - n < j - i)
-                pp.push(undefined)
+                pp[j] = undefined
             else
-                pp.push(0)
+                pp[j] = 0
         }
-        path.push(pp)
+        path[i] = pp
     }
 
 
@@ -45,27 +46,44 @@ for (var T = 1; T <= tc; T++) {
 
         if( path[i][compare] == undefined ){
             // path[i][compare]++
-            stack.pop()
-            stack.push(stack.pop()+1)
+
+            // stack.pop()
+            // stack.push(stack.pop()+1)
+            // 위에 코드를 아래로 바꿈
+            stack.length -= 1
+            stack[stack.length-1]++
+
             i--
             // console.log("0. undefined")
         }
         else if ( path[i][compare+1] == undefined && i == n-1 ){  // 1.
             path[i][compare]++
-            stack.pop()
-            stack.push(stack.pop()+1)
+
+            // stack.pop()
+            // stack.push(stack.pop()+1)
+            // 위에 코드를 아래로 바꿈
+            stack.length -= 1
+            stack[stack.length-1]++
+
             i--
             // console.log("1. right X")
         }
         else if( path[i+1] != undefined && path[i+1][compare+1] != undefined ){ // 2-1.
             // console.log("2. right down O")
-            // path[i][compare]++    // this might be not useful...
+            // path[i][compare]++    // 속도에 별 영향은 없지만... 안써도 정답은 나온다.
             i++
-            stack.push(compare+1)
+
+            // stack.push(compare+1)
+            // 위에 코드를 아래로 바꿈
+            stack[stack.length] = compare+1
+
         } else { // 2-2.
             // console.log("3. right down X")
             path[i][compare]++
-            stack.push(stack.pop()+1)
+
+            // stack.push(stack.pop()+1)
+            // 위에 코드를 아래로 바꿈
+            stack[stack.length-1]++
         }
 
 
@@ -78,9 +96,9 @@ for (var T = 1; T <= tc; T++) {
     var res = 0
     for(var i=0; i<m; i++)
         res += path[n-1][i]
-    console.log(path)
-    console.log(res)
-
-
-
+    
+    resStr += res + "\n"
+    
 }
+
+console.log(resStr)
