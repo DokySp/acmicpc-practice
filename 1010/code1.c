@@ -65,9 +65,10 @@ int main(){
 
         for(i=0; i<m; i++){
             res += path[n-1][i];
+            printf("%d ", path[n-1][i]);
         }
 
-        printf("%d\n", res);
+        printf("\n%d\n", res);
 
     }
 
