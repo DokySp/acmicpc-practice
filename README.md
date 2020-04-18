@@ -7,10 +7,10 @@
 > [icpc.me/u/uhug123](http://icpc.me/u/uhug123)
 
 삼성 SW expert academy 문제 풀이도 기록합니다.
-> [swexpertacademy.com/](https://swexpertacademy.com/main/code/problem/problemList.do)
+> [swexpertacademy.com](https://swexpertacademy.com/main/code/problem/problemList.do)
 
 2019년 국방오픈소스아카데미 집체교육 선발 기출문제도 있습니다.
-> [osam.kr/](https://osam.kr/)
+> [osam.kr](https://osam.kr/)
 
 
 ### 스톱워치 사이트
