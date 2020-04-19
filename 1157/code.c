@@ -1,27 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 
-// 01:00:48 .88 
-// 씨발 런타임 에러 
+// 런타임 에러 
+//   -> int main() 함수에 return 0; 이 아니면 
+//      런타임 에러가 발생한다!
 
-void main(){
+int main(){
 
-    char input[2000001] = {0, };
+    char input[1000001] = {0, };
     int alpha[26] = {0, };
     int maxAlpha = -1, max = -1, i;
-    int len = strlen(input);
-
 
     scanf("%s", input);
-    
-    for(i=0; i < len; i++){
-        
+
+    for(i=0; input[i] != 0; i++){
         if(input[i] >= 'a'){
             alpha[input[i]-'a']++;
         } else {
             alpha[input[i]-'A']++;
-        }  
-
+        }
     }
 
     for(i=0; i<26; i++){
@@ -31,7 +28,6 @@ void main(){
         }
     }
     
-
     for(i=0; i<26; i++){
         if(alpha[i] == max && maxAlpha != i){
             maxAlpha = -1;
@@ -43,5 +39,5 @@ void main(){
     else
         printf("%c\n", maxAlpha+'A');
 
-    return;
+    return 0;
 }
