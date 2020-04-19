@@ -1,4 +1,4 @@
-# [[1000] A+B](http://icpc.me/1000)
+# <img src='https://doky.space/assets/icpclev/b5.svg' height=23px> [[1000] A+B](http://icpc.me/1000)
 
 - node.js: [:o:]
   - 200404
