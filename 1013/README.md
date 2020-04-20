@@ -1,9 +1,9 @@
 # <img src='https://doky.space/assets/icpclev/s1.svg' height=23px> [[1013] Contact](http://icpc.me/1013)
 
-- **node.js: [:x:]**
-  - 000000
-  - 00:00 .00
-  - 시도: 0번
+- **node.js: [:o:]**
+  - 200420
+  - -
+  - 시도: 11번
 
 ### 메모
  - `code2`
