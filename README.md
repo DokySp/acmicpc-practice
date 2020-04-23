@@ -35,3 +35,8 @@ O1901 O1902 O1903 O1904
 
 ### 관심 있는 문제들
 DFA, 10951(다시 풀어보기! : `'\0'` 테스트), 1929(복습!), 1651, 2232, [DP](https://www.acmicpc.net/problem/tag/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D), 4504, [삼성](https://www.acmicpc.net/workbook/view/1152)
+
+
+### 참고
+ - [build -> 가변 매게변수](https://dojang.io/mod/page/view.php?id=577)
+ - 2798 1259 11050 
