@@ -48,12 +48,13 @@ int main(){
                 bin = (bin == 1) ? 2 : 1;
             }
 
+            // 최솟값 구하기
             resw = resw < resb ? resw : resb;
             min = min > resw ? resw : min;
 
         }
     }
-    
+
     printf("%d\n", min);
 
     return 0;
