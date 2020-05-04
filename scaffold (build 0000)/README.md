@@ -1,4 +1,8 @@
-# <img src='https://doky.space/assets/icpclev/bsgdpr05.svg' height=23px> [[0000] 문제제목](http://icpc.me/0000)
+---
+tags: 
+ - ""
+---
+<h1><img src="https://doky.space/assets/icpclev/bsgdpr05.svg" height="37px"> <a href="http://icpc.me/0000">[0000] 문제제목</a></h1>
 
 - **node.js: [:x:]**
   - 000000
