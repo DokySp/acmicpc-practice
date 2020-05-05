@@ -18,15 +18,16 @@ jobs:
 
     - name: git clone & make list
       run: |
-        git clone https://github.com/uhug/uhug.github.io.git
-        cd uhug.github.io
+        git clone --depth 1 https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/uhug/uhug.github.io.git /blog
+        cd blog
         date '+%Y%m%d%H%M%S' > ./_docs/dummy
         
 
     - name: Deploy build
       run: |
-        cd uhug.github.io
+        cd blog
         pwd
+        ls
         git config --local user.email "uhug@naver.com"
         git config --local user.name "DokySp"
         git add .
@@ -34,7 +35,11 @@ jobs:
         git commit -am "Triggered by acmicpc-practice in `date -d'9 hour' '+%Y.%m.%d-%H:%M:%S'`"
 
     - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: uhug/uhug.github.io
+      run: | 
+        cd uhug.github.io
+        pwd
+        ls
+        git status
+        git push
+        
+      
