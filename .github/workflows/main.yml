@@ -25,13 +25,13 @@ jobs:
 
     - name: Deploy build
       run: |
+        cd uhug.github.io
         pwd
         git config --local user.email "uhug@naver.com"
         git config --local user.name "DokySp"
         git add .
         git status
         git commit -am "Triggered by acmicpc-practice in `date -d'9 hour' '+%Y.%m.%d-%H:%M:%S'`"
-
 
     - name: Push changes
       uses: ad-m/github-push-action@master
