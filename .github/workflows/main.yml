@@ -19,10 +19,9 @@ jobs:
     - name: git clone & make list
       run: |
         git clone https://github.com/uhug/uhug.github.io.git
-
-    - name: make trigger file
-      run: |
+        cd uhug.github.io
         date '+%Y%m%d%H%M%S' > ./uhug.github.io/_docs/dummy
+        
 
     - name: Deploy build
       run: |
@@ -37,4 +36,3 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        directory: "./uhug.github.io"
