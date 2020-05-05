@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[10871] X보다 작은 수](http://icpc.me/10871)
+# 10871 X보다 작은 수
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200422
@@ -7,3 +9,4 @@
 
 ### 메모
  - 단순 반복, 비교 문제.
+

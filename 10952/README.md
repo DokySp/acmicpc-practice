@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[10952] A+B - 5](http://icpc.me/10952)
+# 10952 A+B - 5
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200419
@@ -12,3 +14,4 @@
 
 ### 참고
  - [10951 풀이](https://github.com/DokySp/acmicpc-practice/tree/master/10951)
+

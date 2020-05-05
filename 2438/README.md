@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[2438] 별 찍기 - 1](http://icpc.me/2438)
+# 2438 별 찍기 - 1
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200419
@@ -7,3 +9,4 @@
 
 ### 메모
  - 단순 별찍기 문제 (Nested loop)
+

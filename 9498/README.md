@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b4.svg' height=23px> [[9498] 시험 성적](http://icpc.me/9498)
+# 9498 시험 성적
+ - tags: ,
+ - lev: b4
 
 - **C: [:o:]**
   - 200422
@@ -7,3 +9,4 @@
 
 ### 메모
  - 단순 비교문 문제.
+

@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[10951] A+B - 4](http://icpc.me/10951)
+# 10951 A+B - 4
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200419
@@ -16,3 +18,4 @@
 ### 참고
  - [[필독] A+B - 4 FAQ](https://www.acmicpc.net/board/view/39199)
  - [scanf로 EOF까지 입력 받기 팁](https://donggod.tistory.com/55)
+

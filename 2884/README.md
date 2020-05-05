@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[2884] 알람 시계](http://icpc.me/2884)
+# 2884 알람 시계
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200422
@@ -16,4 +18,5 @@
     - `%.2d` : 소수점 및 2자리
     - `%2d` : 위로 2자리 표현
     - `%02d` : 빈자리 0으로 채운 위로 2자리 표현
+
 

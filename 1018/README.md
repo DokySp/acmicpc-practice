@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/s5.svg' height=23px> [[1018] 체스판 다시 칠하기](http://icpc.me/1018)
+# 1018 체스판 다시 칠하기
+ - tags: ,
+ - lev: s5
 
 - **C: [:o:]**
   - 200427
@@ -12,3 +14,4 @@
 
 ### 참고
  - [2798] 블랙잭
+

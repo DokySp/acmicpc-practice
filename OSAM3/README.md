@@ -1,4 +1,6 @@
-# [[OSAM3] UI Event](https://doky.space/osam2019/2020/03/28/osam01.html#3-ui-event)
+# OSAM3 UI Event
+ - tags: ,
+ - lev: u0
 
 - node.js: [:X:]
   - -
@@ -7,3 +9,4 @@
 
 
 ### 메모
+

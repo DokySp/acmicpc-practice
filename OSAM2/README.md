@@ -1,4 +1,6 @@
-# [[OSAM2] 행운권 추첨](https://doky.space/osam2019/2020/03/28/osam01.html#2-%ED%96%89%EC%9A%B4%EA%B6%8C-%EC%B6%94%EC%B2%A8)
+# OSAM2 행운권 추첨
+ - tags: ,
+ - lev: u0
 
 - node.js: [:o:]
   - 200405

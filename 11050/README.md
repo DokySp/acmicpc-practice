@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b1.svg' height=23px> [[11050] 이항 계수 1](http://icpc.me/11050)
+# 11050 이항 계수 1
+ - tags: ,
+ - lev: b1
 
 - **C: [:o:]**
   - 200425
@@ -18,3 +20,4 @@
 
 ### 참고
  - [이항계수란?](https://j1w2k3.tistory.com/747)
+

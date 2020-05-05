@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b5.svg' height=23px> [[10998] A×B](http://icpc.me/10998)
+# 10998 A×B
+ - tags: ,
+ - lev: b5
 
 - **C: [:o:]**
   - 200422
@@ -9,4 +11,5 @@
 
 
 ### 참고
+
 

@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b5.svg' height=23px> [[2475] 검증수](http://icpc.me/2475)
+# 2475 검증수
+ - tags: ,
+ - lev: b5
 
 - **C: [:o:]**
   - 200422
@@ -8,4 +10,5 @@
 ### 메모
  - 단순 계산 문제.
  - 문제 설명이 애매한 문제를 조심하자!
+
 

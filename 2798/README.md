@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b2.svg' height=23px> [[2798] 블랙잭](http://icpc.me/2798)
+# 2798 블랙잭
+ - tags: ,
+ - lev: b2
 
 - **C: [:o:]**
   - 200425

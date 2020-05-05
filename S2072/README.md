@@ -1,4 +1,6 @@
-# [[S2072] 홀수만 더하기 `D1`](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QSEhaA5sDFAUq&categoryId=AV5QSEhaA5sDFAUq&categoryType=CODE)
+# S2072 홀수만 더하기 `D1`
+ - tags: ,
+ - lev: u0
 
 - **C: [:o:]**
   - 20200415
@@ -12,3 +14,4 @@
 ### 참고
  - 그냥 똑같이 printf(), scanf() 쓰면 된다.
  - 다만, 삼성역랑평가 준비를 위해, C/C++로 문제를 풀어야 할듯.
+

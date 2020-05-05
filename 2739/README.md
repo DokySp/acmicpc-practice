@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[2739] 구구단](http://icpc.me/2739)
+# 2739 구구단
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200419
@@ -7,3 +9,4 @@
 
 ### 메모
  - 단순 연산 문제
+

@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b5.svg' height=23px> [[10869] 사칙연산](http://icpc.me/10869)
+# 10869 사칙연산
+ - tags: ,
+ - lev: b5
 
 - **C: [:o:]**
   - 200419
@@ -7,3 +9,4 @@
 
 ### 메모
  - 단순 사칙연산 문제
+

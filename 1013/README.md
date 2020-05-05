@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/s1.svg' height=23px> [[1013] Contact](http://icpc.me/1013)
+# 1013 Contact
+ - tags: ,
+ - lev: s1
 
 - **node.js: [:o:]**
   - 200420
@@ -27,3 +29,4 @@
  - [`1000`](https://www.acmicpc.net/board/view/46847)
  - [`1001101`](https://www.acmicpc.net/board/view/37147)
  - DFA 알고리즘
+

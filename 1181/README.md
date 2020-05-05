@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/s5.svg' height=23px> [[1181] 단어 정렬](http://icpc.me/1181)
+# 1181 단어 정렬
+ - tags: ,
+ - lev: s5
 
 - **C: [:o:]**
   - 200427
@@ -16,3 +18,4 @@
 ### 참고
  - 머지소팅
  - 셀렉션 소팅
+

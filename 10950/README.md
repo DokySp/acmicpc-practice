@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[10950] A+B - 3](http://icpc.me/10950)
+# 10950 A+B - 3
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200419

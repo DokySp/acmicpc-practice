@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/b3.svg' height=23px> [[2741] N 찍기](http://icpc.me/2741)
+# 2741 N 찍기
+ - tags: ,
+ - lev: b3
 
 - **C: [:o:]**
   - 200422
@@ -11,4 +13,5 @@
 ### 참고
  - `기찍 N`를 반대로 하면..?
  - [[2742번 문제]](http://icpc.me/2742)
+
 

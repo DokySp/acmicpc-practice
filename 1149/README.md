@@ -1,4 +1,6 @@
-# [[1149] RGB거리](http://icpc.me/1149)
+# 1149 RGB거리
+ - tags: ,
+ - lev: u0
 
 - node.js: [:o:]
   - 200411

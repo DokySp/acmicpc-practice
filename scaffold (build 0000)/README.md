@@ -1,8 +1,6 @@
----
-tags: 
- - ""
----
-<h1><img src="https://doky.space/assets/icpclev/bsgdpr05.svg" height="37px"> <a href="http://icpc.me/0000">[0000] 문제제목</a></h1>
+# 0000 문제제목
+ - tags: 예시,
+ - lev: s5
 
 - **node.js: [:x:]**
   - 000000

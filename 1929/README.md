@@ -1,4 +1,6 @@
-# <img src='https://doky.space/assets/icpclev/s2.svg' height=23px> [[1929] 소수 구하기](http://icpc.me/1929)
+# 1929 소수 구하기
+ - tags: ,
+ - lev: s2
 
 - **C: [:o:]**
   - 200419
@@ -28,3 +30,4 @@
  - [[Algorithm] 에라토스테네스의 체](https://velog.io/@max9106/Algorithm-%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4)
  - [에라토스테네스의 체 시간복잡도 #1](http://doocong.com/algorithm/sieve-of-eratosthenes/)
  - [에라토스테네스의 체 시간복잡도 #2](http://blog.naver.com/PostView.nhn?blogId=kks227&logNo=220793360258&redirect=Dlog&widgetTypeCall=true)
+
