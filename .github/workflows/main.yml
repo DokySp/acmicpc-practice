@@ -20,7 +20,7 @@ jobs:
       run: |
         git clone https://github.com/uhug/uhug.github.io.git
         cd uhug.github.io
-        date '+%Y%m%d%H%M%S' > ./uhug.github.io/_docs/dummy
+        date '+%Y%m%d%H%M%S' > ./_docs/dummy
         
 
     - name: Deploy build
