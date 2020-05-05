@@ -25,6 +25,7 @@ jobs:
 
     - name: Deploy build
       run: |
+        pwd
         git config --local user.email "uhug@naver.com"
         git config --local user.name "DokySp"
         git add .
