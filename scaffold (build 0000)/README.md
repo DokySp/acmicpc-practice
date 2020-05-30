@@ -1,6 +1,6 @@
 # 0000 문제제목
  - tags: 예시,
- - lev: s5
+ - lev: bsgpdr5
 
 - **node.js: [:x:]**
   - 000000
