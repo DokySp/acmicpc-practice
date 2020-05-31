@@ -12,3 +12,4 @@
 
 ### 참고
  - [[10828] 스택](https://uhug.github.io/docs/10828)
+ - [[10866] 덱](https://uhug.github.io/docs/10866)

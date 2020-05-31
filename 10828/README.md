@@ -16,3 +16,5 @@
 ### 참고
  - [[모두의 코드] &lt;string.h&gt; (cstring)](https://modoocode.com/76)
  - [[코딩도장] 문자열 입출력 함수 사용하기 (gets, puts)](https://dojang.io/mod/page/view.php?id=762)
+ - [[10845] 큐](https://uhug.github.io/docs/10845)
+ - [[10866] 덱](https://uhug.github.io/docs/10866)
