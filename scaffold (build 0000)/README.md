@@ -1,6 +1,6 @@
 # 0000 문제제목
- - tags: 예시,
- - lev: bsgpdr5
+ - tags: 풀지 못한 문제,
+ - lev: bsgpdru5
 
 - **node.js: [:x:]**
   - 000000
