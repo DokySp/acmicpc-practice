@@ -14,5 +14,5 @@
     - 혹시 모르니 `gets()`, `puts()` 사용법도 알아두쟈..
 
 ### 참고
- - [[모두의 코드] <string.h> (cstring)](https://modoocode.com/76)
+ - [[모두의 코드] &lt;string.h&gt; (cstring)](https://modoocode.com/76)
  - [[코딩도장] 문자열 입출력 함수 사용하기 (gets, puts)](https://dojang.io/mod/page/view.php?id=762)
