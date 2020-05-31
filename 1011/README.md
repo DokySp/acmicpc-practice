@@ -1,6 +1,6 @@
-# 1011 Fly me to the Alpha Centauri(S1)
- - tags: ,
- - lev: u0
+# 1011 Fly me to the Alpha Centauri
+ - tags: 수학
+ - lev: s1
 
 - **node.js: [:o:]**
   - 20200418

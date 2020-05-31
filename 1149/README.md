@@ -1,6 +1,6 @@
 # 1149 RGB거리
- - tags: ,
- - lev: u0
+ - tags: 동적 계획법
+ - lev: s1
 
 - node.js: [:o:]
   - 200411

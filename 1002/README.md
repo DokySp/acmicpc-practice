@@ -1,6 +1,6 @@
 # 1002 터렛
- - tags: ,
- - lev: u0
+ - tags: 기하학
+ - lev: s4
 
 - node.js: [:o:]
   - 200404

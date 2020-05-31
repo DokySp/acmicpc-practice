@@ -1,5 +1,5 @@
 # 1001 A-B
- - tags: ,
+ - tags: 사칙연산, 구현, 수학
  - lev: b5
 
 - node.js: [:o:]

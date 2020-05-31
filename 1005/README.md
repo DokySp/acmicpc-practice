@@ -1,6 +1,6 @@
 # 1005 ACM Craft
- - tags: ,
- - lev: u0
+ - tags: 풀지 못한 문제, 
+ - lev: g3
 
 - node.js: [**시간초과**]
   - 200405

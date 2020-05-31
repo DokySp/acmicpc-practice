@@ -1,6 +1,6 @@
 # OSAM1 공정한 심사
- - tags: ,
- - lev: u0
+ - tags: 사칙연산, 구현, 수학
+ - lev: b5
 
 - node.js: [:o:]
   - 200405

@@ -1,6 +1,6 @@
 # OSAM2 행운권 추첨
- - tags: ,
- - lev: u0
+ - tags: 구현, 수학
+ - lev: b4
 
 - node.js: [:o:]
   - 200405
