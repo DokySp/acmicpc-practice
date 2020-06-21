@@ -1,5 +1,5 @@
 # OSAM2 행운권 추첨 [https://doky.space/osam2019/2020/03/28/osam01_1.html#2-%ED%96%89%EC%9A%B4%EA%B6%8C-%EC%B6%94%EC%B2%A8]
- - tags: 구현, 수학
+ - tags: 구현, 수학, 배열
  - lev: b4
 
 - node.js
