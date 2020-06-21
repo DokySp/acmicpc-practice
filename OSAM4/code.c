@@ -11,7 +11,7 @@ int main(){
     int i=0, k=0;
 
     scanf("%d %d", &len, &q);
-    gets(word); //개행 입력되는 것 받아줌.
+    gets(word); //scanf에서 개행 입력을 못 받고 넘기는 것을 받아줌.
     gets(word);
 
     for(i=0; i<q; i++){
