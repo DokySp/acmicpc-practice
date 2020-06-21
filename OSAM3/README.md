@@ -1,5 +1,5 @@
 # OSAM3 UI Event [https://doky.space/osam2019/2020/03/28/osam01_1.html#3-ui-event]
- - tags: 구현
+ - tags: 구현, 다차원 배열
  - lev: b4
 
 - C
