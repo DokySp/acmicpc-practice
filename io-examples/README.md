@@ -1,8 +1,4 @@
 # io-examples IO Examples
-
-자세한 내용은 [https://www.acmicpc.net/help/language](https://www.acmicpc.net/help/language) 를 참고!
-
- - [C
  - tags: ,
  - lev: u0
 
