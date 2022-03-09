@@ -1,0 +1,3 @@
+inp = input()
+
+print(inp)
