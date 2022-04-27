@@ -1,6 +1,7 @@
 # 1011 Fly me to the Alpha Centauri
+ 
  - tags: 수학
- - lev: s1
+ - lev: g5
 
 - **node.js: [:o:]**
   - 20200418

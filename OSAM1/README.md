@@ -1,4 +1,5 @@
 # OSAM1 공정한 심사 [https://doky.space/osam2019/2020/03/28/osam01_1.html#1-%EA%B3%B5%EC%A0%95%ED%95%9C-%EC%8B%AC%EC%82%AC]
+ 
  - tags: 사칙연산, 구현, 수학
  - lev: b4
 
