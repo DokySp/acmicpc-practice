@@ -95,7 +95,8 @@ def create_cloud():
             if board[y][x] >= 2:
                 board[y][x] -= 2
                 cloud.append([x, y])
-
+    
+    # 시간초과 해결
     for _ in range(prev_cloud):
         tx, ty = cloud.pop(0)
         board[ty][tx] *= -1

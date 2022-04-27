@@ -35,17 +35,46 @@ for i in range(M):
         dx = 1
 
     order.append([dx, dy, s])
-#
-#
+
+
 # print(board)
 # print(order)
 
 # N, M = 7, 1
-# board = [[0, 0, 0, 0, 0, 0, 0], [3, 2, 1, 3, 2, 3, 0], [2, 1, 2, 1, 2, 1, 0], [2, 1, 1, 0, 2, 1, 1], [3, 3, 2, 3, 2, 1, 2], [3, 3, 3, 1, 3, 3, 2], [2, 3, 2, 2, 3, 2, 3]]
+# board = [
+#     [0, 0, 0, 0, 0, 0, 0],
+#     [3, 2, 1, 3, 2, 3, 0],
+#     [2, 1, 2, 1, 2, 1, 0],
+#     [2, 1, 1, 0, 2, 1, 1],
+#     [3, 3, 2, 3, 2, 1, 2],
+#     [3, 3, 3, 1, 3, 3, 2],2
+#     [2, 3, 2, 2, 3, 2, 3],
+# ]
 # order = [[0, 1, 2]]
 
 # N, M = 7, 4
-# board = [[0, 0, 0, 2, 3, 2, 3], [1, 2, 3, 1, 2, 3, 1], [2, 3, 1, 2, 3, 1, 2], [1, 2, 3, 0, 2, 3, 1], [2, 3, 1, 2, 3, 1, 2], [3, 1, 2, 3, 1, 2, 3], [1, 2, 3, 1, 2, 3, 1]]
+# board = [
+#     [0, 0, 0, 2, 3, 2, 3],
+#     [1, 2, 3, 1, 2, 3, 1],
+#     [2, 3, 1, 2, 3, 1, 2],
+#     [1, 2, 3, 0, 2, 3, 1],
+#     [2, 3, 1, 2, 3, 1, 2],
+#     [3, 1, 2, 3, 1, 2, 3],
+#     [1, 2, 3, 1, 2, 3, 1],
+# ]
+# order = [[0, -1, 3], [0, 1, 2], [-1, 0, 1], [1, 0, 3]]
+
+
+# N, M = 7, 4
+# board = [
+#     [1, 1, 1, 2, 2, 2, 3],
+#     [1, 2, 2, 1, 2, 2, 3],
+#     [1, 3, 3, 2, 3, 1, 2],
+#     [1, 2, 2, 0, 3, 2, 2],
+#     [3, 1, 2, 2, 3, 2, 2],
+#     [3, 1, 2, 1, 1, 2, 1],
+#     [3, 1, 2, 2, 2, 1, 1],
+# ]
 # order = [[0, -1, 3], [0, 1, 2], [-1, 0, 1], [1, 0, 3]]
 
 
@@ -68,12 +97,13 @@ def get_dir(inp):
 
 
 # flatten
-
 fboard = [-10]
+
+
 def make_num_board():
 
-    dx = int((N-1)/2)
-    dy = int((N-1)/2)
+    dx = int((N - 1) / 2)
+    dy = int((N - 1) / 2)
     dir_count = 0
     idx = 1
     is_change = False
@@ -82,7 +112,6 @@ def make_num_board():
     while True:
 
         gx, gy = get_dir(dir_count)
-
 
         for _ in range(length):
             dx += gx
@@ -94,7 +123,7 @@ def make_num_board():
 
             idx += 1
 
-            if idx == N*N:
+            if idx == N * N:
                 return
 
         if is_change:
@@ -104,13 +133,12 @@ def make_num_board():
         is_change = not is_change
 
 
-
 def add_score(marbno):
 
     global one, two, three
 
-# 이게 아니라 폭발한 구슬 계산
-# for i in range(0, N*N):
+    # 이게 아니라 폭발한 구슬 계산
+    # for i in range(0, N*N):
     if marbno == 1:
         one += 1
     elif marbno == 2:
@@ -119,16 +147,17 @@ def add_score(marbno):
         three += 1
 
 
-
 def pop_marble(dest, score=True):
     # 지움
     # pop할 때 순서 주의
     dest.sort(reverse=True)
     for target in dest:
         marb = fboard.pop(target)
-        if score: add_score(marb)
+        if score:
+            add_score(marb)
     for _ in dest:
         fboard.append(0)
+
 
 def destroy_marble(orderr):
 
@@ -149,8 +178,6 @@ def destroy_marble(orderr):
     pop_marble(dest, score=False)
 
 
-
-
 def find_group(limit):
     grinfo = []
     counted_group = 0
@@ -160,7 +187,7 @@ def find_group(limit):
 
         color_check = -1
 
-        if fboard[ii] == fboard[ii+1]:
+        if fboard[ii] == fboard[ii + 1]:
             glen = 0
             start = -1
             end = -1
@@ -192,8 +219,6 @@ def find_group(limit):
     return counted_group, grinfo
 
 
-
-
 def exp_marble():
 
     dest = []
@@ -209,64 +234,58 @@ def exp_marble():
 
 def create_marble():
 
+    global fboard
 
     newf = [-10]
 
-    counted_group, results = find_group(limit=2)
+    _, results = find_group(limit=2)
 
+    gr = []
+    lng = []
 
-    twos = []
-
-    for fr, _ in results:
-        twos.append(fr)
-
+    for fr, bk in results:
+        leng = bk - fr + 1
+        gr.append(fr)
+        lng.append(leng)
     i = 1
+
+    gridx = 0
+    gr.append(-10)
+    # 길이 3 고려를 안함... ☆☆☆
     while i < len(fboard):
 
+        # 매우중요!!! ☆☆☆☆☆
+        # count, index 함수가 시간복잡도가 굉장히 높은듯
+        # 되도록이면 쓰지 않도록 해야한다!! ☆☆☆☆☆
         if len(newf) == len(fboard):
             break
         elif fboard[i] == 0:
             newf.append(0)
-        elif twos.count(i) >= 1:
-            newf.append(2)
-            i += 1
+        elif gr[gridx] == i:
+            newf.append(lng[gridx])
+            i += lng[gridx] - 1
+            gridx += 1
         else:
             newf.append(1)
 
         newf.append(fboard[i])
 
-
         i += 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # 업데이트를 안함... ☆☆☆
+    fboard = newf
 
 
 make_num_board()
 
-# for iii in (num_board):
-#     print(iii)
-#
-# print(fboard)
-
-
 
 for orderr in order:
 
+    # print("====step====")
+    # print(fboard)
+
     # 1. 구슬 파괴
     destroy_marble(orderr)
-
     # print(fboard)
 
     # 2. 구슬 폭발 ( != 파괴)
@@ -274,17 +293,16 @@ for orderr in order:
     groupn = 1
     while groupn != 0:
         groupn = exp_marble()
+    # print(fboard)
 
     # 3. 구슬 생성
-
     create_marble()
-
-
+    # print(fboard)
 
 
 score = 0
 
-score = one + two*2 + three*3
+score = one + two * 2 + three * 3
 # print(one, two, three)
-
+# print(fboard)
 print(score)
