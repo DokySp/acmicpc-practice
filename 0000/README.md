@@ -18,6 +18,8 @@
     - a^x => `a**x`
     - `min()`, `max()`, `sort(key=lambda x:x[n])`
     - 쓸 때 조심해서 써야 함: `count()`, `index()`
+    - `math` -> `abs()`,
+    - `copy` -> `deepcopy()` (조심해서 사용) 
  - ~~[상어 초등학교](https://uhug.github.io/docs/21608) 문제 다시 풀어보기~~
 
 ### Iterative DFS
